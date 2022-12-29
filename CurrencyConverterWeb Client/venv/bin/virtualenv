@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/imesh/Google Drive/SLTC/Semester 6/Software Architecture/Assignment/Assignment 2/AA1922_SA_Assignment2/CurrencyConverterWeb Client/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from virtualenv.__main__ import run_with_catch
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(run_with_catch())
